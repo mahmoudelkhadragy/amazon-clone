@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   height: 60px;
   display: flex;
   align-items: center;
@@ -39,6 +40,7 @@
   margin-left: 10px;
   margin-right: 10px;
   color: white;
+  cursor: pointer;
 }
 .header_optionLineOne {
   font-size: 11px;
@@ -56,4 +58,32 @@
 .header_basketCount {
   margin: 0 10px;
   font-size: 15px;
+}
+
+.header_nav_dropDown {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .header_nav {
+    height: 150px;
+    position: absolute;
+    background-color: #131921;
+    color: white;
+    flex-direction: column;
+    justify-content: space-evenly;
+    top: 60px;
+    right: 45px;
+    z-index: 333;
+  }
+  .header_nav_dropDown {
+    display: block;
+    color: white;
+    margin: 0 15px 0 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  .header_nav_dropDown:hover {
+    color: #cd9042;
+  }
 }
