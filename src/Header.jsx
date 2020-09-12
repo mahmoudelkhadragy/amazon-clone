@@ -14,6 +14,7 @@ function Header() {
     function windowWidth() {
       if (width <= 600) {
         setDropmenu(false);
+        console.log("changed");
       }
     }
     windowWidth();
