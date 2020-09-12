@@ -1,0 +1,38 @@
+.home__sliderImage {
+  width: 100%;
+  z-index: -1;
+  margin-bottom: -150px;
+}
+
+.home__image {
+  width: 100%;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
+}
+
+.home__slider {
+  width: 100%;
+}
+
+.slick-prev {
+  left: 50px !important;
+}
+.slick-next {
+  right: 50px !important;
+}
+.slick-arrow {
+  z-index: 3;
+  font-size: 40px !important;
+  color: #222;
+  top: 30%;
+  padding: 5px;
+  transition: all 0.4s ease-in-out;
+  transform: scale(1);
+}
+.slick-arrow:hover,
+.slick-arrow:active {
+  color: #222;
+  transform: scale(1.15);
+}
+.slick-slider {
+  z-index: -1 !important;
+}
