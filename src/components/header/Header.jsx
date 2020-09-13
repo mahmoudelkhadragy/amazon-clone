@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import useWindowDimensions from "../helpers/windowDimentions";
-import "./Header.css";
 import amazon_logo from "../../images/amazon_logo.png";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
+import "./Header.css";
 
 function Header() {
   const { width } = useWindowDimensions();
@@ -22,7 +23,9 @@ function Header() {
 
   return (
     <div className="header">
-      <img className="header__logo" src={amazon_logo} alt="amazon logo" />
+      <Link to="/">
+        <img className="header__logo" src={amazon_logo} alt="amazon logo" />
+      </Link>
       <div className="header__search">
         <input className="header__searchInput" type="text" />
         <SearchIcon className="header__searchIcon" />
@@ -52,10 +55,12 @@ function Header() {
       >
         <KeyboardArrowDownIcon />
       </div>
-      <div className="header__optionBasket">
-        <ShoppingBasketIcon />
-        <span className="header__optionLineTwo header__basketCount">0</span>
-      </div>
+      <Link to="/checkout">
+        <div className="header__optionBasket">
+          <ShoppingBasketIcon />
+          <span className="header__optionLineTwo header__basketCount">0</span>
+        </div>
+      </Link>
     </div>
   );
 }
