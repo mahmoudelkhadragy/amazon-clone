@@ -8,12 +8,12 @@ function Subtotal() {
       <CurrencyFormat
         renderText={(value) => (
           <>
-            <p>
-              Subtotal (0 items): <strong>0</strong>
+            <p className="subtotal__count">
+              Subtotal ( <span>0</span> items ): <strong>0</strong>
             </p>
             <small className="subtotal__gift">
-              <input type="checkbox" />
-              This order contains a gift
+              <input type="checkbox" id="gift" />
+              <label htmlFor="gift">This order contains a gift </label>
             </small>
           </>
         )}
