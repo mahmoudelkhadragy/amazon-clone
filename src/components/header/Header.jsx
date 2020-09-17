@@ -6,8 +6,10 @@ import SearchIcon from "@material-ui/icons/Search";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 import "./Header.css";
+import { useStateValue } from "../../context/StateProvider";
 
 function Header() {
+  const [{ basket }, dispatch] = useStateValue();
   const { width } = useWindowDimensions();
   const [dropmenu, setDropmenu] = useState(true);
 
@@ -58,7 +60,9 @@ function Header() {
       <Link to="/checkout">
         <div className="header__optionBasket">
           <ShoppingBasketIcon />
-          <span className="header__optionLineTwo header__basketCount">0</span>
+          <span className="header__optionLineTwo header__basketCount">
+            {basket.length}
+          </span>
         </div>
       </Link>
     </div>
