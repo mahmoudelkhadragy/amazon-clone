@@ -3,9 +3,8 @@ import "./Product.css";
 import { useStateValue } from "../../context/StateProvider";
 
 function Product({ id, title, image, price, rating }) {
-  const [{ basket }, dispatch] = useStateValue();
+  const [dispatch] = useStateValue();
 
-  console.log("this is the basket >>> ", basket);
   const addToBasket = () => {
     //dispatch the item into the data layer
     dispatch({
@@ -32,7 +31,9 @@ function Product({ id, title, image, price, rating }) {
           {Array(rating)
             .fill()
             .map((_, i) => (
-              <p>🌟</p>
+              <span key={i} role="img" aria-label="stars">
+                🌟
+              </span>
             ))}
         </div>
       </div>
