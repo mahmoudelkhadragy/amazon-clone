@@ -1,0 +1,129 @@
+[debug] [2020-09-25T01:13:12.562Z] ----------------------------------------------------------------------
+[debug] [2020-09-25T01:13:12.565Z] Command:       /usr/bin/node /usr/local/bin/firebase deploy
+[debug] [2020-09-25T01:13:12.565Z] CLI Version:   8.11.0
+[debug] [2020-09-25T01:13:12.566Z] Platform:      linux
+[debug] [2020-09-25T01:13:12.566Z] Node Version:  v10.19.0
+[debug] [2020-09-25T01:13:12.566Z] Time:          Fri Sep 25 2020 03:13:12 GMT+0200 (Eastern European Standard Time)
+[debug] [2020-09-25T01:13:12.566Z] ----------------------------------------------------------------------
+[debug] [2020-09-25T01:13:12.566Z] 
+[debug] [2020-09-25T01:13:12.575Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-25T01:13:12.575Z] > authorizing via signed-in user
+[debug] [2020-09-25T01:13:12.576Z] [iam] checking project clone-1c51d for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-09-25T01:13:12.579Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-1c51d:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-09-25T01:13:28.081Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 25 Sep 2020 01:13:25 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=627","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-25T01:13:28.085Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/clone-1c51d  
+ 
+[debug] [2020-09-25T01:14:12.310Z] Server Error. ESOCKETTIMEDOUT
+[debug] [2020-09-25T01:14:25.372Z] FirebaseError: Server Error. ESOCKETTIMEDOUT
+    at Request._callback (/usr/local/lib/node_modules/firebase-tools/lib/api.js:32:31)
+    at self.callback (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:198:13)
+    at Request.EventEmitter.emit (domain.js:448:20)
+    at ClientRequest.<anonymous> (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:819:16)
+    at Object.onceWrapper (events.js:286:20)
+    at ClientRequest.emit (events.js:198:13)
+    at ClientRequest.EventEmitter.emit (domain.js:448:20)
+    at TLSSocket.emitRequestTimeout (_http_client.js:673:40)
+    at Object.onceWrapper (events.js:286:20)
+    at TLSSocket.emit (events.js:198:13)
+    at TLSSocket.EventEmitter.emit (domain.js:448:20)
+    at TLSSocket.Socket._onTimeout (net.js:443:8)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+[error] 
+[error] Error: Failed to get Firebase project clone-1c51d. Please make sure the project exists and your account has permission to access it.
+[debug] [2020-09-25T01:16:47.690Z] ----------------------------------------------------------------------
+[debug] [2020-09-25T01:16:47.695Z] Command:       /usr/bin/node /usr/local/bin/firebase deploy
+[debug] [2020-09-25T01:16:47.695Z] CLI Version:   8.11.0
+[debug] [2020-09-25T01:16:47.695Z] Platform:      linux
+[debug] [2020-09-25T01:16:47.696Z] Node Version:  v10.19.0
+[debug] [2020-09-25T01:16:47.696Z] Time:          Fri Sep 25 2020 03:16:47 GMT+0200 (Eastern European Standard Time)
+[debug] [2020-09-25T01:16:47.696Z] ----------------------------------------------------------------------
+[debug] [2020-09-25T01:16:47.696Z] 
+[debug] [2020-09-25T01:16:47.706Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-25T01:16:47.707Z] > authorizing via signed-in user
+[debug] [2020-09-25T01:16:47.707Z] [iam] checking project clone-1c51d for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-09-25T01:16:47.713Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-1c51d:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-09-25T01:16:56.727Z] [iam] error while checking permissions, command may fail: FirebaseError: Server Error. getaddrinfo ENOTFOUND cloudresourcemanager.googleapis.com cloudresourcemanager.googleapis.com:443
+[debug] [2020-09-25T01:16:56.732Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/clone-1c51d  
+ 
+[debug] [2020-09-25T01:17:33.122Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 25 Sep 2020 01:17:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'clone-1c51d'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-09-25T01:17:33.134Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/clone-1c51d/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-09-25T01:17:42.581Z] Error: connect ENETUNREACH 2a00:1450:4006:807::200a:443 - Local (:::0)
+    at internalConnect (net.js:882:16)
+    at defaultTriggerAsyncIdScope (internal/async_hooks.js:294:19)
+    at GetAddrInfoReqWrap.emitLookup [as callback] (net.js:1029:9)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:61:10)
+[error] 
+[error] Error: Server Error. connect ENETUNREACH 2a00:1450:4006:807::200a:443 - Local (:::0)
+[debug] [2020-09-25T01:22:01.539Z] ----------------------------------------------------------------------
+[debug] [2020-09-25T01:22:01.543Z] Command:       /usr/bin/node /usr/local/bin/firebase deploy
+[debug] [2020-09-25T01:22:01.544Z] CLI Version:   8.11.0
+[debug] [2020-09-25T01:22:01.544Z] Platform:      linux
+[debug] [2020-09-25T01:22:01.544Z] Node Version:  v10.19.0
+[debug] [2020-09-25T01:22:01.545Z] Time:          Fri Sep 25 2020 03:22:01 GMT+0200 (Eastern European Standard Time)
+[debug] [2020-09-25T01:22:01.545Z] ----------------------------------------------------------------------
+[debug] [2020-09-25T01:22:01.545Z] 
+[debug] [2020-09-25T01:22:01.559Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-25T01:22:01.560Z] > authorizing via signed-in user
+[debug] [2020-09-25T01:22:01.560Z] [iam] checking project clone-1c51d for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-09-25T01:22:01.564Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-1c51d:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-09-25T01:22:24.619Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 25 Sep 2020 01:22:22 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=684","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-25T01:22:24.623Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/clone-1c51d  
+ 
+[debug] [2020-09-25T01:22:41.578Z] Server Error. Client network socket disconnected before secure TLS connection was established
+[debug] [2020-09-25T01:22:46.397Z] FirebaseError: Server Error. Client network socket disconnected before secure TLS connection was established
+    at Request._callback (/usr/local/lib/node_modules/firebase-tools/lib/api.js:32:31)
+    at self.callback (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:198:13)
+    at Request.EventEmitter.emit (domain.js:448:20)
+    at Request.onRequestError (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:877:8)
+    at ClientRequest.emit (events.js:203:15)
+    at ClientRequest.EventEmitter.emit (domain.js:448:20)
+    at TLSSocket.socketErrorListener (_http_client.js:401:9)
+    at TLSSocket.emit (events.js:198:13)
+    at TLSSocket.EventEmitter.emit (domain.js:448:20)
+    at emitErrorNT (internal/streams/destroy.js:91:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:59:3)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+[error] 
+[error] Error: Failed to get Firebase project clone-1c51d. Please make sure the project exists and your account has permission to access it.
+[debug] [2020-09-25T01:25:44.834Z] ----------------------------------------------------------------------
+[debug] [2020-09-25T01:25:44.836Z] Command:       /usr/bin/node /usr/local/bin/firebase deploy
+[debug] [2020-09-25T01:25:44.837Z] CLI Version:   8.11.0
+[debug] [2020-09-25T01:25:44.837Z] Platform:      linux
+[debug] [2020-09-25T01:25:44.837Z] Node Version:  v10.19.0
+[debug] [2020-09-25T01:25:44.838Z] Time:          Fri Sep 25 2020 03:25:44 GMT+0200 (Eastern European Standard Time)
+[debug] [2020-09-25T01:25:44.838Z] ----------------------------------------------------------------------
+[debug] [2020-09-25T01:25:44.838Z] 
+[debug] [2020-09-25T01:25:44.846Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-25T01:25:44.847Z] > authorizing via signed-in user
+[debug] [2020-09-25T01:25:44.847Z] [iam] checking project clone-1c51d for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-09-25T01:25:44.851Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-1c51d:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-09-25T01:25:55.158Z] [iam] error while checking permissions, command may fail: FirebaseError: Server Error. Client network socket disconnected before secure TLS connection was established
+[debug] [2020-09-25T01:25:55.161Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/clone-1c51d  
+ 
+[debug] [2020-09-25T01:26:10.019Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 25 Sep 2020 01:26:07 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'clone-1c51d'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-09-25T01:26:10.028Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/clone-1c51d/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-09-25T01:26:31.306Z] Error: connect ENETUNREACH 2a00:1450:4006:802::200a:443 - Local (:::0)
+    at internalConnect (net.js:882:16)
+    at defaultTriggerAsyncIdScope (internal/async_hooks.js:294:19)
+    at GetAddrInfoReqWrap.emitLookup [as callback] (net.js:1029:9)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:61:10)
+[error] 
+[error] Error: Server Error. connect ENETUNREACH 2a00:1450:4006:802::200a:443 - Local (:::0)
